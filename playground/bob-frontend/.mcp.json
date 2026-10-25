@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "huddle": {
+      "command": "node",
+      "args": ["../../bridge/mcp.js"],
+      "env": { "HUDDLE_URL": "ws://localhost:4545", "HUDDLE_MEMBER": "bob", "HUDDLE_AUTORESPOND": "1" }
+    }
+  }
+}

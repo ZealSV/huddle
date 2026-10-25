@@ -1,0 +1,33 @@
+{
+  "name": "huddle",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Context orchestrator for group vibecoding (Cal Hacks 2026 PoC)",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "node hub/server.js --dev",
+    "build": "next build",
+    "hub": "node hub/server.js",
+    "typecheck": "next typegen && tsc --noEmit",
+    "bridge": "node bridge/mcp.js",
+    "demo": "node scripts/demo.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0",
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "ws": "^8.18.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+.env*
+.DS_Store
+# Next.js build output and generated types
+.next/
+next-env.d.ts
+*.tsbuildinfo
+# Local, per-machine data: holds absolute paths and team activity
+.huddle-state.json
+.huddle-token
+**/.claude/settings.local.json
+# Screenshots and logs from the Playwright MCP plugin
+.playwright-mcp/
