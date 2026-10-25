@@ -1,4 +1,4 @@
-# Huddle — a context orchestrator for group vibecoding
+# Huddle: a context orchestrator for group vibecoding
 
 **Problem.** At a hackathon, four people each run their own coding agent (Claude Code, Cursor, …)
 on their own laptop. The agents are individually brilliant and collectively blind: Alice's agent
@@ -23,7 +23,7 @@ other person's actual codebase.
  └─────────────────┘               │   tools: get_team_state,     │          └─────────────────┘
                                    │          ask_member, record_ │
         humans ── browser ────────►│          decision            │
-                 dashboard          └──────────────────────────────┘
+                 dashboard         └──────────────────────────────┘
 ```
 
 ## Design
@@ -119,4 +119,3 @@ To make this the default in a repo, commit two files:
 | `HUDDLE_AUTORESPOND` | off | `1` = answer teammates' questions with read-only `claude -p` in this repo |
 | `ANTHROPIC_API_KEY` | – | hub only; enables the Claude orchestrator |
 | `HUDDLE_STATE_FILE` | `.huddle-state.json` | hub only; where team context is saved between restarts |
-# huddle
